@@ -53,7 +53,7 @@ hist_total_steps <- hist(total_steps_day$total_steps,
                          ylab = "Frequency")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png) 
+![](PA1_template_files/figure-html/hist_total_steps-1.png) 
 
 Calculate and report the mean and median of the total number of steps taken per day: We can use the summary function for this task
 
@@ -83,7 +83,7 @@ plot_average_interval <- plot(average_steps_interval, type = "l",
                               ylab = "Average number of steps taken (averaged across all days)")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-7-1.png) 
+![](PA1_template_files/figure-html/plot_average_steps_interval-1.png) 
 
 Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -145,7 +145,7 @@ hist_total_steps_imputed <- hist(total_steps_day_imputed$total_steps,
                                  ylab = "Frequency")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-12-1.png) 
+![](PA1_template_files/figure-html/hist_total_steps_imputed-1.png) 
 
 We can also compare the summaries to see the changes introduced by this imputation process
 
@@ -231,6 +231,6 @@ xyplot(average ~ interval | factor,
        ylab = "Average number of steps taken")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-21-1.png) 
+![](PA1_template_files/figure-html/plot_weekend_weekdays-1.png) 
 
 In this graph we can see that - compared to the weekend - the subject gets up earlier during weekdays, has a higher amount of activity in the morning, and does less steps during working hours. The activity during weekends is distributed more evenly throughout the day.
